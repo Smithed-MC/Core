@@ -1,3 +1,3 @@
 execute as @a at @s run function smithed:core/player/tick
 
-execute as @e[type=armor_stand,tag=smd.armor_stand] at @s run function #smithed:core/entity/armor_stand
+execute as @e[type=#smithed:core/ticking] at @s run function smithed:core/technical/entity_tick
