@@ -1,5 +1,5 @@
-data modify storage smd:core item set from entity @s[nbt={Items:[{Slot:-106b,id:"minecraft:carrot_on_a_stick"}]}] Items[{Slot:-106b}]
-data modify storage smd:core item set from entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}}] SelectedItem
+execute if predicate smithed:core/player/coas/offhand run function smithed:core/player/coas/offhand
+execute if predicate smithed:core/player/coas/mainhand run function smithed:core/player/coas/mainhand
 
 function #smithed:core/player/use_coas
 scoreboard players reset @s smd.coas

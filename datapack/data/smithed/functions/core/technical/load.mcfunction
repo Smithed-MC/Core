@@ -1,6 +1,8 @@
 scoreboard objectives add smd.data dummy
 scoreboard objectives add smd.damage dummy
 
+scoreboard objectives add smd.id dummy
+
 scoreboard objectives add smd.logLevel dummy
 scoreboard objectives add smd.const dummy
 
