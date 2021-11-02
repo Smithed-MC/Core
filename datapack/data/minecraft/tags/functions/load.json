@@ -1,5 +1,5 @@
 {
-    "values":[
-        "smithed:core/technical/load"
+    "values": [
+        "#load:_private/load"
     ]
 }
