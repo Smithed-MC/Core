@@ -15,7 +15,7 @@
       }
     },
     "rewards": {
-      "function": "smithed:core/block/api/place_block"
+      "function": "smithed:core/zint/place_custom_block"
     }
   }
   

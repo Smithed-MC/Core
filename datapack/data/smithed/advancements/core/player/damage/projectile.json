@@ -12,7 +12,7 @@
       }
     },
     "rewards": {
-      "function": "smithed:core/player/damage/projectile"
+      "function": "smithed:core/zint/player/damage/projectile"
     }
   }
   

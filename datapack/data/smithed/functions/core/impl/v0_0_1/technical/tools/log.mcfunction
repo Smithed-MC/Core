@@ -1,4 +1,4 @@
-#> smithed:core/technical/tools/log
+#> smithed:core/impl/v0_0_1/technical/tools/log
 #> Input: smd:log {level: number, message: string-json, type: 'ERROR' | 'WARNING' | 'INFO'}
 
 execute store result score $temp smd.logLevel run data get storage smd:log level

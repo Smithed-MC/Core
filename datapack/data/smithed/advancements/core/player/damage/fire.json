@@ -12,7 +12,7 @@
       }
     },
     "rewards": {
-      "function": "smithed:core/player/damage/fire"
+      "function": "smithed:core/zint/player/damage/fire"
     }
   }
   

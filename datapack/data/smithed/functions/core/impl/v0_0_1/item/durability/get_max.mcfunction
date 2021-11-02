@@ -82,4 +82,4 @@ execute if data storage smd:core item{id:"minecraft:turtle_helmet"} run scoreboa
 execute if data storage smd:core item{tag:{Unbreakable:1b}} run scoreboard players set $temp4 smd.data 0
 
 execute if score $temp4 smd.data matches -1 run data merge storage smd:log {message:'[{"text":"Invalid tool used! "},{"nbt":"item.id","storage":"smd:core"}]',type:'WARNING'}
-execute if score $temp4 smd.data matches -1 run function smithed:core/impl/v0_0_1/technical/tools/log
+execute if score $temp4 smd.data matches -1 run function #smithed:core/pub/technical/tools/log

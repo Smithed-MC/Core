@@ -12,7 +12,7 @@
       }
     },
     "rewards": {
-      "function": "smithed:core/player/damage/lightning"
+      "function": "smithed:core/zint/player/damage/lightning"
     }
   }
   

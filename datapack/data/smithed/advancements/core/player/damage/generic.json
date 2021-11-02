@@ -19,6 +19,6 @@
         }
     },
     "rewards": {
-        "function": "smithed:core/player/damage/generic"
+        "function": "smithed:core/zint/player/damage/generic"
     }
 }
