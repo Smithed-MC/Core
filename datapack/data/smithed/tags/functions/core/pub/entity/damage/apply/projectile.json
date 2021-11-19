@@ -1,5 +1,5 @@
 {
     "values": [
-        "smithed:core/calls/v0_0_1/entity/damage/apply/projectile"
+        "smithed:core/calls/v0_0_2/entity/damage/apply/projectile"
     ]
 }
