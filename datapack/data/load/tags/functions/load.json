@@ -1,6 +1,5 @@
 {
     "values": [
-        "#smithed:core/pub/technical/enumerate",
-        "#smithed:core/pub/technical/resolve"
+        "#smithed:core/pub/technical/load"
     ]
 }
