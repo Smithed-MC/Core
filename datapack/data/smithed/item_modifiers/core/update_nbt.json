@@ -3,7 +3,7 @@
       "function": "minecraft:copy_nbt",
       "source": {
         "type": "minecraft:storage",
-        "source": "smd:core"
+        "source": "smithed:core"
       },
       "ops": [
         {
