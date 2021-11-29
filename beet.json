@@ -13,5 +13,9 @@
         "name": "Smithed Core"
     },
     "output": "out",
-    "ignore": ["out"]
+    "ignore": ["out"],
+    "pipeline": [
+        "mecha",
+        "beet.contrib.dundervar"
+    ]
 }
