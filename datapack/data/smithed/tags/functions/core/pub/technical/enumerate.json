@@ -1,5 +1,5 @@
 {
     "values": [
-        "smithed:core/calls/v0_0_3/technical/enumerate"
+        "smithed:core/calls/__version__/technical/enumerate"
     ]
 }

@@ -1,5 +1,5 @@
 {
     "values": [
-        "smithed:core/calls/v0_0_3/item/durability/damage/offhand"
+        "smithed:core/calls/__version__/item/durability/damage/offhand"
     ]
 }

@@ -1,5 +1,5 @@
 {
     "values": [
-        "smithed:core/calls/v0_0_3/block/api/place_block"
+        "smithed:core/calls/__version__/block/api/place_block"
     ]
 }

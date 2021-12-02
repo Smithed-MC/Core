@@ -1,5 +1,5 @@
 {
     "values": [
-        "smithed:core/calls/v0_0_3/technical/tools/log"
+        "smithed:core/calls/__version__/technical/tools/log"
     ]
 }

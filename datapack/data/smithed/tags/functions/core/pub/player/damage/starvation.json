@@ -1,5 +1,5 @@
 {
     "values": [
-        "smithed:core/calls/v0_0_3/player/damage/starvation"
+        "smithed:core/calls/__version__/player/damage/starvation"
     ]
 }

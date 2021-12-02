@@ -1,0 +1,2 @@
+execute if score #smithed.core.minor load.status matches ..0 unless score #smithed.core.minor load.status matches 0 run function smithed:core/calls/__version__/technical/enumerate/set_version
+execute if score #smithed.core.minor load.status matches ..0 if score #smithed.core.minor load.status matches 0 unless score #smithed.core.set load.status matches 1 run function smithed:core/calls/__version__/technical/enumerate/patch
