@@ -1,0 +1,7 @@
+{
+    "values": [
+        {"id": "#smithed:core/load/dependencies", "required": false},
+        "#smithed:core/load/enumerate",
+        "#smithed:core/load/resolve"
+    ]
+}
