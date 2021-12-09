@@ -64,6 +64,7 @@ set_version = (
     'scoreboard players set #smithed.core.set load.status 1'
 )
 
+
 def beet_default(ctx: Context):
     version = ctx.template.globals['version'] = f'v{ctx.project_version}'
     major, minor, patch = version.replace('v', '').split('.')
@@ -101,6 +102,13 @@ def beet_default(ctx: Context):
 
     ctx.data[f'smithed:core/calls/{version}/technical/enumerate/set_version'] = Function(
         set_version.format(version=version, major=major, minor=minor, patch=patch)
+    )
+    
+    ctx.data[f'smithed:core/load/enumerate'] = FunctionTag(
+        {"values":["smithed:core/calls/{version}/technical/{tag}".format(version=version, tag='enumerate')]}
+    )
+    ctx.data[f'smithed:core/load/resolve'] = FunctionTag(
+        {"values":["smithed:core/calls/{version}/technical/{tag}".format(version=version, tag='resolve')]}
     )
 
 

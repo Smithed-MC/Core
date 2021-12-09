@@ -1,4 +1,4 @@
-#> @public
+# @public
 
 execute store result score $temp smithed.data run data get storage smithed:core item.tag.Enchantments[{id:"minecraft:unbreaking"}].lvl
 

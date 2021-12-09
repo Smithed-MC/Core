@@ -55,7 +55,7 @@ execute if score $temp4 smithed.data matches 0 store result score $temp smithed.
 execute if score $temp4 smithed.data matches 0 run scoreboard players remove $temp smithed.data 1
 execute if score $temp4 smithed.data matches 0 store result storage smithed:core item.tag.smithed.durability.dur int 1 run scoreboard players get $temp smithed.data
 
-function smithed:core/impl/__version__/item/lore/build
+# function smithed:core/impl/__version__/item/lore/build
 
 #output state
 scoreboard players set $out smithed.data 1

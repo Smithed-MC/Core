@@ -1,4 +1,4 @@
-#> @public
+# @public
 
 advancement revoke @s only smithed:core/player/damage/fire
 

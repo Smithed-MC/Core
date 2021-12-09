@@ -1,4 +1,4 @@
-#> @public
+# @public
 
 execute if entity @s[type=player] run function smithed:core/impl/__version__/entity/damage/health/calculate_modifier
 execute if entity @s[type=!player] run function smithed:core/impl/__version__/entity/damage/health/get_entity_health

@@ -1,4 +1,4 @@
-#> @public
+# @public
 
 # rx97
 #  adapted from TCC

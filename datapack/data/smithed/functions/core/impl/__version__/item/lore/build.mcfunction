@@ -1,4 +1,4 @@
-#> smithed:core/impl/__version__/item/lore/build
+# @public
 #> input: smithed:core item
 #> output: smithed:core item
 

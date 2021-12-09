@@ -1,4 +1,4 @@
-#> @public
+# @public
 
 advancement revoke @s only smithed:core/technical/place_custom_block
 

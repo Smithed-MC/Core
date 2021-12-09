@@ -1,4 +1,4 @@
-#> @public
+# @public
 #> smithed:core/impl/__version__/technical/tools/log
 #> Input: smithed:log {level: number, message: string-json, type: 'ERROR' | 'WARNING' | 'INFO'}
 

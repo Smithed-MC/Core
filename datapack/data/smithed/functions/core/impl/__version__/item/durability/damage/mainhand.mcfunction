@@ -1,4 +1,4 @@
-#> @public
+# @public
 
 data modify storage smithed:core item set from entity @s SelectedItem
 
