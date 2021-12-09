@@ -1,7 +1,0 @@
-{
-    "values": [
-        {"id": "#smithed:core/pub/technical/dependencies", "required": false},
-        "#smithed:core/pub/technical/enumerate",
-        "#smithed:core/pub/technical/resolve"
-    ]
-}

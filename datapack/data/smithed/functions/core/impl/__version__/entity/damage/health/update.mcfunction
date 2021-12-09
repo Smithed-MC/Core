@@ -1,0 +1,2 @@
+execute if entity @s[type=player] run function smithed:core/impl/__version__/entity/damage/health/update_player
+execute if entity @s[type=!player] run function smithed:core/impl/__version__/entity/damage/health/update_entity
