@@ -9,6 +9,8 @@ function smithed:core/impl/v0_0_3/item/durability/get_max
 ## durability.damage -= Damage
 scoreboard players operation $temp1 smithed.data -= $temp2 smithed.data
 
+execute if score $temp1 smithed.data matches 1.. if data storage smithed:core item.tag.Enchantments[{id:"minecraft:mending"}] run function smithed:core/impl/v0_0_3/item/durability/calc_mending
+
 ## durability.dur += (durability.damage - Damage)
 scoreboard players operation $temp smithed.data += $temp1 smithed.data
 
@@ -31,7 +33,7 @@ scoreboard players operation $temp5 smithed.data = $temp4 smithed.data
 
 ## temp6 = base.MaxDur - 8
 scoreboard players operation $temp6 smithed.data = $temp4 smithed.data
-# scoreboard players remove $temp6 smithed.data 8
+scoreboard players remove $temp6 smithed.data 8
 
 ## temp5 *= durability.dur
 scoreboard players operation $temp5 smithed.data *= $temp smithed.data
@@ -52,6 +54,8 @@ execute if score $temp4 smithed.data matches 1.. store result storage smithed:co
 execute if score $temp4 smithed.data matches 0 store result score $temp smithed.data run data get storage smithed:core item.tag.smithed.durability.dur
 execute if score $temp4 smithed.data matches 0 run scoreboard players remove $temp smithed.data 1
 execute if score $temp4 smithed.data matches 0 store result storage smithed:core item.tag.smithed.durability.dur int 1 run scoreboard players get $temp smithed.data
+
+function smithed:core/impl/v0_0_3/item/lore/build
 
 #output state
 scoreboard players set $out smithed.data 1
