@@ -3,7 +3,7 @@ scoreboard players operation $temp1 smithed.data += $xp.temp smithed.data
 scoreboard players operation $xp.temp1 smithed.data = $temp smithed.data
 scoreboard players operation $xp.temp1 smithed.data += $temp1 smithed.data
 
-execute if score $xp.temp1 smithed.data > $temp3 smithed.data run function smithed:core/impl/v0_0_3/item/durability/calc_mending/return_overflow
+execute if score $xp.temp1 smithed.data > $temp3 smithed.data run function smithed:core/impl/__version__/item/durability/calc_mending/return_overflow
 
 execute if score $xp.temp smithed.data matches 256.. run xp add @s -128 points
 execute if score $xp.temp smithed.data matches 256.. run scoreboard players remove $xp.temp smithed.data 256 
