@@ -44,6 +44,9 @@ jobs:
           # Path of keys to the value as a JSON list.
           key-path: '["version"]'
           
+      - name: Print version
+        run: echo ${{steps.var.outputs.data}}
+          
       - name: Upload artifact
         uses: actions/upload-artifact@v2.3.0
         with:
