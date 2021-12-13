@@ -37,10 +37,20 @@ jobs:
       - name: Build project
         run: beet build
         
+      - name: Read yaml
+        # You may pin to the exact commit or the version.
+        # uses: KJ002/read-yaml@a01a7dc2d3e912f62086236a95dbba004775e07b
+        uses: KJ002/read-yaml@1.5
+        with:
+          # YAML file to read from.
+          file: /beet.yaml
+          # Path of keys to the value as a JSON list.
+          key-path: '["version"]'
+          
       - name: Upload artifact
         uses: actions/upload-artifact@v2.3.0
         with:
           # Artifact name
-          name: Smithed Core [Nightly]
+          name: Smithed Core [Nightly v${{data['version']}}]
           # A file, directory or wildcard pattern that describes what to upload
           path: out/Smithed Core
