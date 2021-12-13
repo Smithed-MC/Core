@@ -34,9 +34,6 @@ jobs:
       - name: Build project
         run: beet build
         
-      - name: List
-        run: ls
-        
       - name: Read yaml
         id: yaml
         # You may pin to the exact commit or the version.
@@ -48,13 +45,11 @@ jobs:
           # Path of keys to the value as a JSON list.
           key-path: '["version"]'
           
-      - name: Print version
-        run: echo ${{steps.yaml.outputs.data}}
           
       - name: Upload artifact
         uses: actions/upload-artifact@v2.3.0
         with:
           # Artifact name
-          name: Smithed Core [Nightly v${{steps.var.outputs.data}}]
+          name: Smithed Core [Nightly v${{steps.yaml.outputs.data}}]
           # A file, directory or wildcard pattern that describes what to upload
           path: out/Smithed Core
