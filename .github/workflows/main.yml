@@ -31,9 +31,6 @@ jobs:
       - name: Install beet and mecha
         run: pip install beet mecha
         
-      - name: Run mecha
-        run: mecha datapack
-        
       - name: Build project
         run: beet build
         
@@ -51,6 +48,6 @@ jobs:
         uses: actions/upload-artifact@v2.3.0
         with:
           # Artifact name
-          name: Smithed Core [Nightly v${{data['version']}}]
+          name: Smithed Core [Nightly v${{steps.var.outputs.data}}]
           # A file, directory or wildcard pattern that describes what to upload
           path: out/Smithed Core
