@@ -34,6 +34,9 @@ jobs:
       - name: Build project
         run: beet build
         
+      - name: List
+        run: ls
+        
       - name: Read yaml
         # You may pin to the exact commit or the version.
         # uses: KJ002/read-yaml@a01a7dc2d3e912f62086236a95dbba004775e07b
