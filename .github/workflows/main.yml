@@ -40,7 +40,7 @@ jobs:
         uses: KJ002/read-yaml@1.5
         with:
           # YAML file to read from.
-          file: beet.yaml
+          file: './beet.yaml'
           # Path of keys to the value as a JSON list.
           key-path: '["version"]'
           
