@@ -24,5 +24,3 @@ fill -30000000 1 1600 -30000000 1 1615 minecraft:bedrock
 function smithed:core/impl/__version__/technical/def_const
 
 function smithed:core/impl/__version__/technical/tick
-
-say hi
