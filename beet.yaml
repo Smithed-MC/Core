@@ -23,3 +23,6 @@ pipeline:
 meta:
   mecha:
     keep_comments: true
+  versioning:
+    key: '#smithed.core'
+    root: smithed:core
